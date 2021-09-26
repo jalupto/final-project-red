@@ -85,6 +85,43 @@ router.post("/login", async (req, res) => {
 
 /*
 ========================================================================================================
+UPDATE USER
+========================================================================================================
+*/
+/*
+router.put('/:id', validateToken, async(req, res) => {
+    let { newEmail, newPassword } = req.body.user;
+    const userId = req.user.id;
+
+    const query = {
+        where: {
+            id: userId
+        }
+    };
+
+    console.log(userId, email, password);
+
+    const updatedUser = {
+        email: newEmail,
+        password: newPassword
+    };
+
+    try {
+        const update = await User.update(updatedUser, query);
+        res.status(200).json({
+            message: 'User updated.',
+            update
+        });
+    } catch (err) {
+        res.status(500).json({
+            message: 'Something went wrong!',
+            error: err
+        });
+    }
+});
+*/
+/*
+========================================================================================================
 DELETE USER
 ========================================================================================================
 */
