@@ -5,6 +5,7 @@ const sequelize = new Sequelize(
     process.env.DB_URL,
     {
         dialect: "postgres",
+        ssl: process.env.ENVIRONMENT === 'production'
     }
 )
 
