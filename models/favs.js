@@ -5,7 +5,7 @@ const DefineFav = (sequelize, DataTypes) => {
             allowNull: false,
         },
         season: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: true,
         }
     });

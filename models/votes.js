@@ -6,7 +6,7 @@ const DefineVote = (sequelize, DataTypes) => {
         },
         
         season: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: true,
         }
     });
