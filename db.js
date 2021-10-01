@@ -8,12 +8,12 @@ const sequelize = new Sequelize(
     {
         dialect: "postgres",
         ssl: process.env.ENVIRONMENT === 'production',
-        dialectOptions: {
-            ssl: {
-                require: true,
-                rejectUnauthorized: false
-            }
-        }
+        // dialectOptions: {
+        //     ssl: {
+        //         require: true,
+        //         rejectUnauthorized: false
+        //     }
+        // }
     }
 )
 
